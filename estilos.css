@@ -1,0 +1,30 @@
+/* === VARIACIONES PARA PRACTICAR (cambia colores, fuentes) === */
+body {
+    background-color: lavenderblush;   /* puedes cambiarlo por #fdeff2, #fbe9e7 */
+    text-align: center;
+}
+/* pÃ¡rrafos con otra fuente divertida */
+p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;  /* opciÃ³n mÃ¡s informal */
+    color: #2d4055;
+    font-size: 1.3rem;
+}
+/* encabezado principal con sombra */
+h1 {
+    font-family: 'Impact', Charcoal, sans-serif;
+    color: #b22222;
+    font-size: 48px;
+    text-shadow: 2px 2px 0px #ffb6b6;
+}
+/* colores alternativos para h2 y h3 */
+h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #1a4d5e;
+    font-size: 32px;
+}
+h3 {
+    font-family: 'Century Gothic', sans-serif;
+    color: #5f7345;
+    font-size: 26px;
+    letter-spacing: 2px;
+}

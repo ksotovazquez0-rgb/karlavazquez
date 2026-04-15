@@ -1,0 +1,93 @@
+
+/* ===== ESTILOS GENERALES (BASE MÓVIL) ===== */
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+}
+
+/* Encabezado y pie */
+.header, .pie { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Barra de navegación */
+.navbar { 
+    background-color: #800020; 
+}
+.menu { 
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.menu li a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 15px; 
+    display: block; 
+}
+.menu li a:hover {
+    background-color: #a04040;
+    transition: 0.3s;
+}
+
+/* Contenedor principal FLEXIBLE */
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap; /* EN MÓVIL: SE APILAN */
+    padding: 10px;
+}
+
+.contenido { 
+    flex: 1 1 100%; /* OCUPA 100% EN MÓVIL */
+    padding: 10px; 
+    background: white; 
+}
+
+.lateral { 
+    flex: 1 1 100%; /* OCUPA 100% EN MÓVIL */
+    padding: 10px; 
+    background: #ddd; 
+}
+
+/* Imágenes fluidas (nunca se desbordan) */
+.img-fluida { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin: 10px 0;
+}
+
+/* ===== MEDIA QUERY PARA TABLETS Y ESCRITORIO (pantallas > 700px) ===== */
+@media (min-width: 700px) {
+    .contenedor-principal {
+        flex-wrap: nowrap; /* ESCRITORIO: UNO AL LADO DEL OTRO */
+    }
+    
+    .contenido {
+        flex: 3; /* Ocupa 3/4 del espacio */
+        margin-right: 10px;
+    }
+    
+    .lateral {
+        flex: 1; /* Ocupa 1/4 del espacio */
+    }
+}
+
+/* Ajustes adicionales para pantallas muy grandes */
+@media (min-width: 1200px) {
+    .contenedor-principal {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+                
